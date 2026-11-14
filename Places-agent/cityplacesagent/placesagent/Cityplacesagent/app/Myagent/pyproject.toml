@@ -1,0 +1,10 @@
+[project]
+name = "MyAgent"                      # leave the template's value
+version = "0.1.0"
+description = "Places Agent"
+requires-python = ">=3.10"            # leave the template's value (your uv Python is 3.13)
+dependencies = [
+    "bedrock-agentcore[a2a]", # AgentCore runtime SDK
+    "strands-agents[a2a]", # agent framework
+    "requests", # Nominatim + Foursquare calls
+]
