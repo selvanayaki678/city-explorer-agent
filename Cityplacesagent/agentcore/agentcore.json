@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schema.agentcore.aws.dev/v1/agentcore.json",
+  "name": "Cityplacesagent",
+  "version": 1,
+  "managedBy": "CDK",
+  "tags": {
+    "agentcore:created-by": "agentcore-cli",
+    "agentcore:project-name": "Cityplacesagent"
+  },
+ "runtimes": [
+  {
+    "name": "Placesagent",
+    "build": "CodeZip",
+    "entrypoint": "main.py",
+    "codeLocation": "app/Myagent/",
+    "runtimeVersion": "PYTHON_3_13",
+    "networkMode": "PUBLIC",
+    "protocol": "A2A",
+    "envVars": [
+      { "name": "FSQ_API_KEY", "value": "" },
+      { "name": "NOMINATIM_USER_AGENT", "value": "city-explorer-agent/1.0 (https://github.com/selvanayaki678/city-explorer-agent)" }
+    ]
+  }
+],
+  "memories": [],
+  "knowledgeBases": [],
+  "credentials": [],
+  "evaluators": [],
+  "onlineEvalConfigs": [],
+  "agentCoreGateways": [],
+  "policyEngines": [],
+  "configBundles": [],
+  "abTests": [],
+  "harnesses": [],
+  "datasets": [],
+  "payments": []
+  
+}
