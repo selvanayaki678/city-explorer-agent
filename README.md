@@ -8,7 +8,8 @@ Three agents answer it together. Each one is built with a different setup and de
 
 I built this to learn A2A properly. This README covers what the project does, how the folders were created, what goes into each `main.py`, and the exact steps I used to deploy it.
 
-![City Explorer architecture](docs/architecture.png)
+<img width="1152" height="737" alt="city_explorer_agent" src="https://github.com/user-attachments/assets/78f8eb2a-9ef4-4657-a237-50ba378d6a83" />
+
 
 ## The three agents
 
